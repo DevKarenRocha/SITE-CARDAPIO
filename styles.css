@@ -16,7 +16,7 @@ body {
 
 .sub-class1 {
   position: relative;
-  width: 15vw; /* Define largura proporcional */
+  width: 40vw; /* Define largura proporcional */
   height: 40vh; /* Define altura proporcional */
   overflow: hidden;
   border-radius: 10px; /* Bordas arredondadas */
@@ -24,13 +24,11 @@ body {
 }
 
 .sub-class1:hover{
-  width: 16vw;
-  height: 41vh;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .sub-class1 img {
-  width: 100%;
+  width:20vh;
   height: 100%;
   object-fit: cover; /* Faz a imagem preencher o container */
   border-radius: 10px; /* Garante que a imagem siga as bordas */
@@ -62,37 +60,38 @@ body {
   z-index: 2; /* Fica acima do degradê */
 }
 
+hr{
+  border: 1px solid white;
+  height: 0.1vh;
+  opacity: 100%;
+  background-color: #ffffff;
+}
 
-#Vodka {
-  background-color: #ff6347;
+#vodka {
   padding: 20px;
   text-align: center;
   margin: 4vh;
 }
 
-#destilado {
-  background-color: #ff6347;
+#rum {
   padding: 20px;
   text-align: center;
   margin: 4vh;
 }
 
-#vinho {
-  background-color: #ff6347;
+#gin {
   padding: 20px;
   text-align: center;
   margin: 4vh;
 }
 
-#licor {
-  background-color: #ff6347;
+#tequila {
   padding: 20px;
   text-align: center;
   margin: 4vh;
 }
 
-#coquitel {
-  background-color: #ff6347;
+#whisky {
   padding: 20px;
   text-align: center;
   margin: 4vh;
@@ -106,13 +105,11 @@ body {
 }
 
 .cards {
-  background-color:green;
   padding: 20px;
   border-radius: 8px;
 }
 
 .sub-cards {
-  background-color: rgb(0, 4, 255);
   display: grid; /* Usa grid para criar linhas e colunas */
   grid-template-columns: repeat(5, 1fr); /* 5 cards por linha */
   gap: 20px; /* Espaçamento entre os cards */
@@ -121,7 +118,7 @@ body {
 
 /* Estilo do Card */
 .product-card {
-  background-color: #5a3211;
+  background-color: #341901;
   color: white;
   border-radius: 8px;
   overflow: hidden;
@@ -136,7 +133,7 @@ body {
 
 .product-card img {
   width: 100%;
-  height: 150px;
+  height: 28vh;
   object-fit: cover;
   border-bottom: 2px solid #fff;
 }
@@ -151,4 +148,104 @@ body {
   font-size: 1rem;
   font-weight: bold;
   color: #ffd700;
+}
+
+
+
+.contato{
+  display: flex;
+}
+
+.part1{
+  line-height: 0.5;
+}
+
+
+.part2{
+  line-height: 0.5;
+  text-align: center;
+}
+
+.part3{
+  text-align: end;
+}
+
+.rodape{
+  text-align: center;
+  margin-top: 5vh;
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+   background-color: #000000;
+   border-radius: 10px; 
+   scrollbar-width: thin; 
+   scrollbar-color: #ffffff #000000; 
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #341901; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  background-color: #ffd700; /* Cor ao passar o mouse */
+color: #000000;
+}
+
+/* Quando a seta não estiver visível, ela terá "display: none" (adicionaremos isso com JavaScript) */
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .product-card img {
+    width: 100%;
+    height: 28vh;
+    object-fit: cover;
+    border-bottom: 2px solid #fff;
+  }
+
+  .product-card .price {
+    margin: 10px 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffd700;
+  }
+
+  .sub-cards {
+    display: grid; /* Usa grid para criar linhas e colunas */
+    grid-template-columns: repeat(3, 1fr); /* 5 cards por linha */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px;
+  }
+
+  .sub-class {
+    margin:0vh 0vw 10vh;
+    padding: 2vh;
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar em linhas se necessário */
+    gap: 1vw; /* Espaço entre as imagens */
+    justify-content: center; /* Centraliza os itens */
+  }
+
 }

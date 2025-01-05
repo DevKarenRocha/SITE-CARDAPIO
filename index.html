@@ -7,6 +7,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"></script>
+
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
@@ -20,7 +24,7 @@
     </header>
      <section>''
          <div class="sub-class">
-                 <a href="#Vodka">
+                 <a href="#vodka">
                      <div class="sub-class1">
                          <img src="IMG/vodka.png" alt="Vodka">
                          <div class="overlay">
@@ -28,7 +32,7 @@
                          </div>
                      </div>
                  </a>
-                 <a href="#Rum">
+                 <a href="#rum">
                      <div class="sub-class1">
                          <img src="IMG/rum.png" alt="Rum" />
                          <div class="overlay">
@@ -36,7 +40,7 @@
                          </div>
                      </div>
                  </a>
-                 <a href="#Gin">
+                 <a href="#gin">
                      <div class="sub-class1">
                          <img src="IMG/gin.png" alt="Gin" />
                          <div class="overlay">
@@ -44,7 +48,7 @@
                          </div>
                      </div>
                  </a>
-                 <a href="#Tequila">
+                 <a href="#tequila">
                      <div class="sub-class1">
                          <img src="IMG/tequila.png" alt="Tequila" />
                          <div class="overlay">
@@ -52,7 +56,7 @@
                          </div>
                      </div>
                  </a>
-                 <a href="#Whisky ">
+                 <a href="#whisky ">
                      <div class="sub-class1">
                          <img src="IMG/whisky.png" alt="Whisky " />
                          <div class="overlay">
@@ -61,11 +65,13 @@
                      </div>
                  </a>
              </div>
-         
      </section>
-     <section id="Vodka">
+     <button id="scrollToTopBtn" class="scroll-to-top hidden">
+      ↑
+    </button>
+     <section id="vodka">
         <div class="cards">
-            <h3 class="text-left">DRINKS COM VODKA</h3>
+            <h3 class="text-left">DRINKS COM VODKA</h3><hr>
           <div class="sub-cards">
             <div class="product-card">
               <img src="produtos/moscowmule.jpg" alt="Moscow Mule"/>
@@ -145,330 +151,378 @@
           </div>
         </div>
       </section>
-      <section id="destilado">
+      <section id="rum">
         <div class="cards">
+          <h3 class="text-left">DRINKS COM RUM</h3><hr>
           <div class="sub-cards">
             <div class="product-card">
-                <img src="product1.jpg" alt="Produto 1" />
-                <h3>Produto 1</h3>
+                <img src="produtos/mojito.jpg" alt="Mojito" />
+                <h3>Mojito</h3>
                 <p class="price">R$ 19,99</p>
               </div>
               <div class="product-card">
-                <img src="product2.jpg" alt="Produto 2" />
-                <h3>Produto 2</h3>
+                <img src="produtos/Daiquiri.jpg" alt="Daiquiri" />
+                <h3>Daiquiri</h3>
                 <p class="price">R$ 24,99</p>
               </div>
               <div class="product-card">
-                <img src="product3.jpg" alt="Produto 3" />
-                <h3>Produto 3</h3>
+                <img src="produtos/PiñaColada.jpg" alt="Piña Colada" />
+                <h3>Piña Colada</h3>
                 <p class="price">R$ 29,99</p>
               </div>
               <div class="product-card">
-                <img src="product4.jpg" alt="Produto 4" />
-                <h3>Produto 4</h3>
+                <img src="produtos/cubaLibre.jpg" alt="Cuba Libre" />
+                <h3>Cuba Libre</h3>
                 <p class="price">R$ 34,99</p>
               </div>
               <div class="product-card">
-                <img src="product5.jpg" alt="Produto 5" />
-                <h3>Produto 5</h3>
+                <img src="produtos/MaiTai.jpg" alt="Mai Tai" />
+                <h3>Mai Tai</h3>
                 <p class="price">R$ 39,99</p>
               </div>
               <div class="product-card">
-                <img src="product6.jpg" alt="Produto 6" />
-                <h3>Produto 6</h3>
+                <img src="produtos/DarkandStormy.jpg" alt="Dark and Stormy" />
+                <h3>Dark and Stormy</h3>
                 <p class="price">R$ 19,99</p>
               </div>
               <div class="product-card">
-                <img src="product7.jpg" alt="Produto 7" />
-                <h3>Produto 7</h3>
+                <img src="produtos/RumPunch.jpg" alt="Rum Punch" />
+                <h3>Rum Punch</h3>
                 <p class="price">R$ 24,99</p>
               </div>
               <div class="product-card">
-                <img src="product8.jpg" alt="Produto 8" />
-                <h3>Produto 8</h3>
+                <img src="produtos/Planter’sPunch.jpg" alt="Planter’s Punch" />
+                <h3>Planter’s Punch</h3>
                 <p class="price">R$ 29,99</p>
               </div>
               <div class="product-card">
-                <img src="product9.jpg" alt="Produto 9" />
-                <h3>Produto 9</h3>
+                <img src="produtos/Zombie.jpg" alt="Zombie" />
+                <h3>Zombie</h3>
                 <p class="price">R$ 34,99</p>
               </div>
               <div class="product-card">
-                <img src="product10.jpg" alt="Produto 10" />
-                <h3>Produto 10</h3>
+                <img src="produtos/spacepalmer.jpg" alt="Space Palmer" />
+                <h3>Space Palmer</h3>
                 <p class="price">R$ 39,99</p>
               </div>
               <div class="product-card">
-                <img src="product11.jpg" alt="Produto 11" />
-                <h3>Produto 11</h3>
+                <img src="produtos/NavyGrog.jpg" alt="Navy Grog" />
+                <h3>Navy Grog</h3>
                 <p class="price">R$ 19,99</p>
               </div>
               <div class="product-card">
-                <img src="product12.jpg" alt="Produto 12" />
-                <h3>Produto 12</h3>
+                <img src="produtos/HemingwaySpecial.jpg" alt="Hemingway Special" />
+                <h3>Hemingway Special</h3>
                 <p class="price">R$ 24,99</p>
               </div>
               <div class="product-card">
-                <img src="product13.jpg" alt="Produto 13" />
-                <h3>Produto 13</h3>
+                <img src="produtos/BlueHawaii.jpg" alt="Blue Hawaii" />
+                <h3>Blue Hawaii</h3>
                 <p class="price">R$ 29,99</p>
               </div>
               <div class="product-card">
-                <img src="product14.jpg" alt="Produto 14" />
-                <h3>Produto 14</h3>
+                <img src="produtos/RumSour.jpg" alt="Rum Sour" />
+                <h3>Rum Sour</h3>
                 <p class="price">R$ 34,99</p>
               </div>
               <div class="product-card">
-                <img src="product15.jpg" alt="Produto 15" />
-                <h3>Produto 15</h3>
+                <img src="produtos/Painkiller.jpg" alt="Painkiller" />
+                <h3>Painkiller</h3>
                 <p class="price">R$ 39,99</p>
               </div>
           </div>
         </div>
       </section>
-      <section id="vinho">
+      <section id="gin">
         <div class="cards">
+          <h3 class="text-left">DRINKS COM GIN</h3><hr>
           <div class="sub-cards">
             <div class="product-card">
-                <img src="product1.jpg" alt="Produto 1" />
-                <h3>Produto 1</h3>
+                <img src="produtos/GinandTonic.jpg" alt="Gin and Tonic" />
+                <h3>Gin and Tonic</h3>
                 <p class="price">R$ 19,99</p>
               </div>
               <div class="product-card">
-                <img src="product2.jpg" alt="Produto 2" />
-                <h3>Produto 2</h3>
+                <img src="produtos/Negroni.jpg" alt="Negroni" />
+                <h3>Negroni</h3>
                 <p class="price">R$ 24,99</p>
               </div>
               <div class="product-card">
-                <img src="product3.jpg" alt="Produto 3" />
-                <h3>Produto 3</h3>
+                <img src="produtos/TomCollins.jpg" alt="Tom Collins" />
+                <h3>Tom Collins</h3>
                 <p class="price">R$ 29,99</p>
               </div>
               <div class="product-card">
-                <img src="product4.jpg" alt="Produto 4" />
-                <h3>Produto 4</h3>
+                <img src="produtos/Martini.jpg" alt="Martini" />
+                <h3>Martini</h3>
                 <p class="price">R$ 34,99</p>
               </div>
               <div class="product-card">
-                <img src="product5.jpg" alt="Produto 5" />
-                <h3>Produto 5</h3>
+                <img src="produtos/French75.jpg" alt="French 75" />
+                <h3>French 75</h3>
                 <p class="price">R$ 39,99</p>
               </div>
               <div class="product-card">
-                <img src="product6.jpg" alt="Produto 6" />
-                <h3>Produto 6</h3>
+                <img src="produtos/SingaporeSling.jpg" alt="Singapore Sling" />
+                <h3>Singapore Sling</h3>
                 <p class="price">R$ 19,99</p>
               </div>
               <div class="product-card">
-                <img src="product7.jpg" alt="Produto 7" />
-                <h3>Produto 7</h3>
+                <img src="produtos/GinFizz.jpg" alt="Gin Fizz" />
+                <h3>Gin Fizz</h3>
                 <p class="price">R$ 24,99</p>
               </div>
               <div class="product-card">
-                <img src="product8.jpg" alt="Produto 8" />
-                <h3>Produto 8</h3>
+                <img src="produtos/Aviation.jpg" alt="Aviation" />
+                <h3>Aviation</h3>
                 <p class="price">R$ 29,99</p>
               </div>
               <div class="product-card">
-                <img src="product9.jpg" alt="Produto 9" />
-                <h3>Produto 9</h3>
+                <img src="produtos/CloverClub.jpg" alt="Clover Club" />
+                <h3>Clover Club</h3>
                 <p class="price">R$ 34,99</p>
               </div>
               <div class="product-card">
-                <img src="product10.jpg" alt="Produto 10" />
-                <h3>Produto 10</h3>
+                <img src="produtos/Bramble.jpg" alt="Bramble" />
+                <h3>Bramble</h3>
                 <p class="price">R$ 39,99</p>
               </div>
               <div class="product-card">
-                <img src="product11.jpg" alt="Produto 11" />
-                <h3>Produto 11</h3>
+                <img src="produtos/Southside.jpg" alt="Southside" />
+                <h3>Southside</h3>
                 <p class="price">R$ 19,99</p>
               </div>
               <div class="product-card">
-                <img src="product12.jpg" alt="Produto 12" />
-                <h3>Produto 12</h3>
+                <img src="produtos/Ramosginfizz.jpg" alt="Ramos Gin Fizz" />
+                <h3>Ramos Gin Fizz</h3>
                 <p class="price">R$ 24,99</p>
               </div>
               <div class="product-card">
-                <img src="product13.jpg" alt="Produto 13" />
-                <h3>Produto 13</h3>
+                <img src="produtos/GinSour.jpg" alt="Gin Sour" />
+                <h3>Gin Sour</h3>
                 <p class="price">R$ 29,99</p>
               </div>
               <div class="product-card">
-                <img src="product14.jpg" alt="Produto 14" />
-                <h3>Produto 14</h3>
+                <img src="produtos/pink-lady.jpg" alt="Pink Lady" />
+                <h3>Pink Lady</h3>
                 <p class="price">R$ 34,99</p>
               </div>
               <div class="product-card">
-                <img src="product15.jpg" alt="Produto 15" />
-                <h3>Produto 15</h3>
+                <img src="produtos/BeesKnees.jpg" alt="Bees Knees" />
+                <h3>Bees Knees</h3>
                 <p class="price">R$ 39,99</p>
               </div>
           </div>
         </div>
       </section>
-      <section id="licor">
+      <section id="tequila">
         <div class="cards">
+          <h3 class="text-left">DRINKS COM TEQUILA</h3><hr>
           <div class="sub-cards">
             <div class="product-card">
-                <img src="product1.jpg" alt="Produto 1" />
-                <h3>Produto 1</h3>
+                <img src="produtos/margarita.jpg" alt="Margarita" />
+                <h3>Margarita</h3>
                 <p class="price">R$ 19,99</p>
               </div>
               <div class="product-card">
-                <img src="product2.jpg" alt="Produto 2" />
-                <h3>Produto 2</h3>
+                <img src="produtos/TequilaSunrise.jpg" alt="Tequila Sunrise" />
+                <h3>Tequila Sunrise</h3>
                 <p class="price">R$ 24,99</p>
               </div>
               <div class="product-card">
-                <img src="product3.jpg" alt="Produto 3" />
-                <h3>Produto 3</h3>
+                <img src="produtos/Paloma.jpg" alt="Paloma" />
+                <h3>Paloma</h3>
                 <p class="price">R$ 29,99</p>
               </div>
               <div class="product-card">
-                <img src="product4.jpg" alt="Produto 4" />
-                <h3>Produto 4</h3>
+                <img src="produtos/ElDiablo.jpg" alt="El Diablo" />
+                <h3>El Diablo</h3>
                 <p class="price">R$ 34,99</p>
               </div>
               <div class="product-card">
-                <img src="product5.jpg" alt="Produto 5" />
-                <h3>Produto 5</h3>
+                <img src="produtos/TequilaSour.jpg" alt="Tequila Sour" />
+                <h3>Tequila Sour</h3>
                 <p class="price">R$ 39,99</p>
               </div>
               <div class="product-card">
-                <img src="product6.jpg" alt="Produto 6" />
-                <h3>Produto 6</h3>
+                <img src="produtos/LongIslandIcedTea.jpg" alt="Long Island Iced Tea" />
+                <h3>Long Island Iced Tea</h3>
                 <p class="price">R$ 19,99</p>
               </div>
               <div class="product-card">
-                <img src="product7.jpg" alt="Produto 7" />
-                <h3>Produto 7</h3>
+                <img src="produtos/TequilaSlammer.jpg" alt="Tequila Slammer" />
+                <h3>Tequila Slammer</h3>
                 <p class="price">R$ 24,99</p>
               </div>
               <div class="product-card">
-                <img src="product8.jpg" alt="Produto 8" />
-                <h3>Produto 8</h3>
+                <img src="produtos/Matador.jpg" alt="Matador" />
+                <h3>Matador</h3>
                 <p class="price">R$ 29,99</p>
               </div>
               <div class="product-card">
-                <img src="product9.jpg" alt="Produto 9" />
-                <h3>Produto 9</h3>
+                <img src="produtos/MexicanMule.jpg" alt="Mexican Mule" />
+                <h3>Mexican Mule</h3>
                 <p class="price">R$ 34,99</p>
               </div>
               <div class="product-card">
-                <img src="product10.jpg" alt="Produto 10" />
-                <h3>Produto 10</h3>
+                <img src="produtos/BloodyMaria.jpg" alt="Bloody Maria" />
+                <h3>Bloody Maria</h3>
                 <p class="price">R$ 39,99</p>
               </div>
               <div class="product-card">
-                <img src="product11.jpg" alt="Produto 11" />
-                <h3>Produto 11</h3>
+                <img src="produtos/CactusCooler.jpg" alt="Cactus Cooler" />
+                <h3>Cactus Cooler</h3>
                 <p class="price">R$ 19,99</p>
               </div>
               <div class="product-card">
-                <img src="product12.jpg" alt="Produto 12" />
-                <h3>Produto 12</h3>
+                <img src="produtos/Sangrita.jpg" alt="Sangrita" />
+                <h3>Sangrita</h3>
                 <p class="price">R$ 24,99</p>
               </div>
               <div class="product-card">
-                <img src="product13.jpg" alt="Produto 13" />
-                <h3>Produto 13</h3>
+                <img src="produtos/BraveBull.jpg" alt="Brave Bull" />
+                <h3>Brave Bull</h3>
                 <p class="price">R$ 29,99</p>
               </div>
               <div class="product-card">
-                <img src="product14.jpg" alt="Produto 14" />
-                <h3>Produto 14</h3>
+                <img src="produtos/TequilaMojito.jpg" alt="Tequila Mojito" />
+                <h3>Tequila Mojito</h3>
                 <p class="price">R$ 34,99</p>
               </div>
               <div class="product-card">
-                <img src="product15.jpg" alt="Produto 15" />
-                <h3>Produto 15</h3>
+                <img src="produtos/TequilaOldFashioned.jpg" alt="Tequila Old Fashioned" />
+                <h3>Tequila Old Fashioned</h3>
                 <p class="price">R$ 39,99</p>
               </div>
           </div>
         </div>
       </section>
-      <section id="coquitel">
+      <section id="whisky">
         <div class="cards">
+          <h3 class="text-left">DRINKS COM WHISKY</h3><hr>
           <div class="sub-cards">
             <div class="product-card">
-                <img src="product1.jpg" alt="Produto 1" />
-                <h3>Produto 1</h3>
+                <img src="produtos/OldFashioned.jpg" alt="Old Fashioned" />
+                <h3>Old Fashioned</h3>
                 <p class="price">R$ 19,99</p>
               </div>
               <div class="product-card">
-                <img src="product2.jpg" alt="Produto 2" />
-                <h3>Produto 2</h3>
+                <img src="produtos/WhiskySour.jpg" alt="Whisky Sour" />
+                <h3>Whisky Sour</h3>
                 <p class="price">R$ 24,99</p>
               </div>
               <div class="product-card">
-                <img src="product3.jpg" alt="Produto 3" />
-                <h3>Produto 3</h3>
+                <img src="produtos/Manhattan.jpg" alt="Manhattan" />
+                <h3>Manhattan</h3>
                 <p class="price">R$ 29,99</p>
               </div>
               <div class="product-card">
-                <img src="product4.jpg" alt="Produto 4" />
-                <h3>Produto 4</h3>
+                <img src="produtos/IrishCoffee.jpg" alt="Irish Coffee" />
+                <h3>Irish Coffee</h3>
                 <p class="price">R$ 34,99</p>
               </div>
               <div class="product-card">
-                <img src="product5.jpg" alt="Produto 5" />
-                <h3>Produto 5</h3>
+                <img src="produtos/MintJulep.jpg" alt="Mint Julep" />
+                <h3>Mint Julep</h3>
                 <p class="price">R$ 39,99</p>
               </div>
               <div class="product-card">
-                <img src="product6.jpg" alt="Produto 6" />
-                <h3>Produto 6</h3>
+                <img src="produtos/Boulevardier.jpg" alt="Boulevardier" />
+                <h3>Boulevardier</h3>
                 <p class="price">R$ 19,99</p>
               </div>
               <div class="product-card">
-                <img src="product7.jpg" alt="Produto 7" />
-                <h3>Produto 7</h3>
+                <img src="produtos/Sazerac.jpg" alt="Sazerac" />
+                <h3>Sazerac</h3>
                 <p class="price">R$ 24,99</p>
               </div>
               <div class="product-card">
-                <img src="product8.jpg" alt="Produto 8" />
-                <h3>Produto 8</h3>
+                <img src="produtos/RobRoy.jpg" alt="Rob Roy" />
+                <h3>Rob Roy</h3>
                 <p class="price">R$ 29,99</p>
               </div>
               <div class="product-card">
-                <img src="product9.jpg" alt="Produto 9" />
-                <h3>Produto 9</h3>
+                <img src="produtos/Highball.jpg" alt="Highball" />
+                <h3>Highball</h3>
                 <p class="price">R$ 34,99</p>
               </div>
               <div class="product-card">
-                <img src="product10.jpg" alt="Produto 10" />
-                <h3>Produto 10</h3>
+                <img src="produtos/Godfather.jpg" alt="Godfather" />
+                <h3>Godfather</h3>
                 <p class="price">R$ 39,99</p>
               </div>
               <div class="product-card">
-                <img src="product11.jpg" alt="Produto 11" />
-                <h3>Produto 11</h3>
+                <img src="produtos/LynchburgLemonade.jpg" alt="Lynchburg Lemonade" />
+                <h3>Lynchburg Lemonade</h3>
                 <p class="price">R$ 19,99</p>
               </div>
               <div class="product-card">
-                <img src="product12.jpg" alt="Produto 12" />
-                <h3>Produto 12</h3>
+                <img src="produtos/Penicillin.jpg" alt="Penicillin" />
+                <h3>Penicillin</h3>
                 <p class="price">R$ 24,99</p>
               </div>
               <div class="product-card">
-                <img src="product13.jpg" alt="Produto 13" />
-                <h3>Produto 13</h3>
+                <img src="produtos/RustyNail.jpg" alt="Rusty Nail" />
+                <h3>Rusty Nail</h3>
                 <p class="price">R$ 29,99</p>
               </div>
               <div class="product-card">
-                <img src="product14.jpg" alt="Produto 14" />
-                <h3>Produto 14</h3>
+                <img src="produtos/WhiskySmash.jpg" alt="Whisky Smash" />
+                <h3>Whisky Smash</h3>
                 <p class="price">R$ 34,99</p>
               </div>
               <div class="product-card">
-                <img src="product15.jpg" alt="Produto 15" />
-                <h3>Produto 15</h3>
+                <img src="produtos/ScotchMule.jpg" alt="Scotch Mule" />
+                <h3>Scotch Mule</h3>
                 <p class="price">R$ 39,99</p>
               </div>
           </div>
         </div>
       </section>
+      <!-- Footer -->
+<footer id="contatos">
+  <div class="banner">
+    <img src="IMG/rodape.png" alt="" width="100%">
+  </div>
+  <div class="container">
+    <div class="contato" >
+      <!-- Informações de Contato -->
+      <div class="part1 col-4">
+        <h4>Contato</h4>
+        <p>Telefone: (99) 99999-9999</p>
+        <p>Email: contato@bardoexemplo.com</p>
+        <p>Endereço: Rua Exemplo, 123, Centro</p>
+      </div>
+
+      <!-- Horário de Funcionamento -->
+      <div class=" part2 col-4">
+        <h4> Horário de Funcionamento</h4>
+        <p>Seg - Sex: 18h - 00h</p>
+        <p>Sáb - Dom: 16h - 02h</p>
+      </div>
+
+      <!-- Redes Sociais -->
+      <div class="part3 col-4">
+        <h4>Siga-nos</h4>
+        <div>
+          <a href="#" aria-label="Facebook">
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <i class="fab fa-twitter fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="rodape">
+      © 2025 Bar do Exemplo. Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
             
