@@ -1,0 +1,154 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sub-class {
+  margin:0vh 0vw 10vh;
+  padding: 4vh;
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar em linhas se necessário */
+  gap: 1vw; /* Espaço entre as imagens */
+  justify-content: center; /* Centraliza os itens */
+}
+
+.sub-class1 {
+  position: relative;
+  width: 15vw; /* Define largura proporcional */
+  height: 40vh; /* Define altura proporcional */
+  overflow: hidden;
+  border-radius: 10px; /* Bordas arredondadas */
+  transition: transform 0.3s ease;
+}
+
+.sub-class1:hover{
+  width: 16vw;
+  height: 41vh;
+  transform: scale(1.05);
+}
+
+.sub-class1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem preencher o container */
+  border-radius: 10px; /* Garante que a imagem siga as bordas */
+  border: 3px solid #000000;
+  
+}
+
+.sub-class1 .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%; /* Altura do degradê */
+  background: linear-gradient(transparent,#00000085,#000000b6,#000000fd,#000000); /* Degradê preto */
+  z-index: 1;
+}
+
+.sub-class1 .overlay .text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  text-shadow: 10px 15px 20px #000000b3; /* Sombra para destacar o texto */
+  z-index: 2; /* Fica acima do degradê */
+}
+
+
+#Vodka {
+  background-color: #ff6347;
+  padding: 20px;
+  text-align: center;
+  margin: 4vh;
+}
+
+#destilado {
+  background-color: #ff6347;
+  padding: 20px;
+  text-align: center;
+  margin: 4vh;
+}
+
+#vinho {
+  background-color: #ff6347;
+  padding: 20px;
+  text-align: center;
+  margin: 4vh;
+}
+
+#licor {
+  background-color: #ff6347;
+  padding: 20px;
+  text-align: center;
+  margin: 4vh;
+}
+
+#coquitel {
+  background-color: #ff6347;
+  padding: 20px;
+  text-align: center;
+  margin: 4vh;
+}
+
+#cerveja {
+  background-color: #ff6347;
+  padding: 20px;
+  text-align: center;
+  margin: 4vh;
+}
+
+.cards {
+  background-color:green;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.sub-cards {
+  background-color: rgb(0, 4, 255);
+  display: grid; /* Usa grid para criar linhas e colunas */
+  grid-template-columns: repeat(5, 1fr); /* 5 cards por linha */
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px;
+}
+
+/* Estilo do Card */
+.product-card {
+  background-color: #5a3211;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 2px solid #fff;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.product-card .price {
+  margin: 10px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffd700;
+}
