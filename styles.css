@@ -52,7 +52,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   color: #ffffff;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
@@ -68,7 +68,6 @@ hr{
 }
 
 #vodka {
-  padding: 20px;
   text-align: center;
   margin: 4vh;
 }
@@ -97,15 +96,9 @@ hr{
   margin: 4vh;
 }
 
-#cerveja {
-  background-color: #ff6347;
-  padding: 20px;
-  text-align: center;
-  margin: 4vh;
-}
 
 .cards {
-  padding: 10vh;
+  padding: 5vh;
   border-radius: 8px;
 }
 
@@ -140,12 +133,12 @@ hr{
 
 .product-card h3 {
   margin: 10px 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .product-card .price {
   margin: 10px 0;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #ffd700;
 }
@@ -194,8 +187,8 @@ hr{
   position: fixed;
   bottom: 10vh;
   right: 5vw;
-  background-color: #341901; /* Cor de fundo */
-  color: white; /* Cor do texto */
+  background-color: #341901; 
+  color: white; 
   border: none;
   padding: 1vh 2vw;
   border-radius: 50%;
@@ -207,189 +200,175 @@ hr{
 }
 
 .scroll-to-top:hover {
-  background-color: #ffd700; /* Cor ao passar o mouse */
+  background-color: #ffd700; 
 color: #000000;
 }
 
-/* Quando a seta não estiver visível, ela terá "display: none" (adicionaremos isso com JavaScript) */
 .hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TELA DE TABLET~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CELULAR~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+         @media (min-width:320px) and (max-width:400px){
+             .sub-class {
+                   margin:0vh 0vw 10vh;
+                   padding: 1vh;
+                   display: flex;
+                   flex-wrap: wrap; /* Permite quebrar em linhas se necessário */
+                   gap: 1vw; /* Espaço entre as imagens */
+                   justify-content: center; /* Centraliza os itens */
+                   }
+             .sub-class1 {
+                   position: relative;
+                   width: 30vw; /* Define largura proporcional */
+                   height: 18vh; /* Define altura proporcional */
+                   overflow: hidden;
+                   border-radius: 10px; /* Bordas arredondadas */
+                   transition: transform 0.3s ease;
+                   }
+             .sub-class1 .overlay .text {
+                   position: absolute;
+                   bottom: 10%;
+                   left: 50%;
+                   transform: translateX(-50%);
+                   color: #ffffff;
+                   font-size: 1rem;
+                   font-weight: bold;
+                   font-family: Georgia, 'Times New Roman', Times, serif;
+                   text-align: center;
+                   text-shadow: 10px 15px 20px #000000b3; /* Sombra para destacar o texto */
+                   z-index: 2; /* Fica acima do degradê */
+                   }
+  
+             #vodka{
+                   padding: 1vh;
+                   text-align: center;
+                   margin: 1vh;
+                   }
+             #rum{
+                   padding: 1vh;
+                   text-align: center;
+                   margin: 1vh;
+                   }
+             #gin{
+                   padding: 1vh;
+                   text-align: center;
+                   margin: 1vh;
+                   }       
+             #tequila {
+                   padding: 1px;
+                   text-align: center;
+                   margin: 1vh;
+                   }  
+             #whisky {
+                   padding: 1px;
+                   text-align: center;
+                   margin: 1vh;
+                   } 
+                   .sub-cards {
+                    grid-template-columns: repeat(1, 1fr); /* 3 cards por linha */
+                    gap: 1vh; /* Ajusta o espaçamento entre os cards */
+                    padding: 1vh; /* Reduz o padding geral */
+                  }
+                
+                  .product-card img {
+                    height: 40vh; /* Ajusta a altura para manter o layout compacto */
+                  }
+                
+                  .product-card h3 {
+                    font-size: 1.6rem; /* Reduz o tamanho do título */
+                  }
+                
+                  .product-card .price {
+                    font-size: 1.5rem; /* Reduz o tamanho do preço */
+                  }
 
-@media (max-width: 768px) {
-  .product-card img {
-    width: 100%;
-    height: 28vh;
-    object-fit: cover;
-    border-bottom: 2px solid #fff;
+                  .cards {
+                    padding: 1vh;
+                    border-radius: 8px;
+                  }
+
   }
 
-  .product-card .price {
-    margin: 10px 0;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #ffd700;
-  }
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TABLET~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  @media (min-width:400px) and (max-width:768px) {
+    .sub-class {
+          margin:0vh 0vw 10vh;
+          padding: 2vh;
+          display: flex;
+          flex-wrap: wrap; /* Permite quebrar em linhas se necessário */
+          gap: 1vw; /* Espaço entre as imagens */
+          justify-content: center; /* Centraliza os itens */
+          }
+    .sub-class1 {
+          position: relative;
+          width: 17vw; /* Define largura proporcional */
+          height: 18vh; /* Define altura proporcional */
+          overflow: hidden;
+          border-radius: 10px; /* Bordas arredondadas */
+          transition: transform 0.3s ease;
+          }
+    .sub-class1 .overlay .text {
+          position: absolute;
+          bottom: 10%;
+          left: 50%;
+          transform: translateX(-50%);
+          color: #ffffff;
+          font-size: 1.5rem;
+          font-weight: bold;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          text-align: center;
+          text-shadow: 10px 15px 20px #000000b3; /* Sombra para destacar o texto */
+          z-index: 2; /* Fica acima do degradê */
+          }
 
-  .sub-class1 {
-    position: relative;
-    width: 40vw; /* Define largura proporcional */
-    height: 40vh; /* Define altura proporcional */
-    overflow: hidden;
-    border-radius: 10px; /* Bordas arredondadas */
-    transition: transform 0.3s ease;
-  }
+    #vodka{
+          padding: 1vh;
+          text-align: center;
+          margin: 1vh;
+          }
+    #rum{
+          padding: 1vh;
+          text-align: center;
+          margin: 1vh;
+          }
+    #gin{
+          padding: 1vh;
+          text-align: center;
+          margin: 1vh;
+          }       
+    #tequila {
+          padding: 1px;
+          text-align: center;
+          margin: 1vh;
+          }  
+    #whisky {
+          padding: 1px;
+          text-align: center;
+          margin: 1vh;
+          } 
+          .sub-cards {
+           grid-template-columns: repeat(3, 1fr); /* 3 cards por linha */
+           gap: 1vh; /* Ajusta o espaçamento entre os cards */
+           padding: 1vh; /* Reduz o padding geral */
+         }
+       
+         .product-card img {
+           height: 15vh; /* Ajusta a altura para manter o layout compacto */
+         }
+       
+         .product-card h3 {
+           font-size: 1.5rem; /* Reduz o tamanho do título */
+         }
+       
+         .product-card .price {
+           font-size: 1.8rem; /* Reduz o tamanho do preço */
+         }
 
-  .sub-cards {
-    display: grid; /* Usa grid para criar linhas e colunas */
-    grid-template-columns: repeat(3, 1fr); /* 5 cards por linha */
-    gap: 20px; /* Espaçamento entre os cards */
-    padding: 20px;
-  }
+         .cards {
+           padding: 1vh;
+           border-radius: 8px;
+         }
 
-  .scroll-to-top {
-    position: fixed;
-    bottom: 10vh;
-    right: 8vw;
-    background-color: #341901; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    border: none;
-    padding: 5vh 10vw;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.3s ease;
-    z-index: 1000;
-  }
-
-  .sub-class {
-    margin:0vh 0vw 10vh;
-    padding: 2vh;
-    display: flex;
-    flex-wrap: wrap; /* Permite quebrar em linhas se necessário */
-    gap: 1vw; /* Espaço entre as imagens */
-    justify-content: center; /* Centraliza os itens */
-  }
-
-}
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP PEQUENO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-@media (max-width: 1024px) {
-  .product-card img {
-    width: 100%;
-    height: 28vh;
-    object-fit: cover;
-    border-bottom: 2px solid #fff;
-  }
-
-  .product-card .price {
-    margin: 10px 0;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #ffd700;
-  }
-
-  .sub-class1 {
-    position: relative;
-    width: 15vw; /* Define largura proporcional */
-    height: 40vh; /* Define altura proporcional */
-    overflow: hidden;
-    border-radius: 10px; /* Bordas arredondadas */
-    transition: transform 0.3s ease;
-  }
-
-  .sub-cards {
-    display: grid; /* Usa grid para criar linhas e colunas */
-    grid-template-columns: repeat(5, 1fr); /* 5 cards por linha */
-    gap: 1VW; /* Espaçamento entre os cards */
-    padding: 20px;
-  }
-
-  .scroll-to-top {
-    position: fixed;
-    bottom: 10vh;
-    right: 5vw;
-    background-color: #341901; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    border: none;
-    padding: 2vh 2vw;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.3s ease;
-    z-index: 1000;
-  }
-
-  .sub-class {
-    margin:0vh 0vw 10vh;
-    padding: 2vh;
-    display: flex;
-    flex-wrap: wrap; /* Permite quebrar em linhas se necessário */
-    gap: 1vw; /* Espaço entre as imagens */
-    justify-content: center; /* Centraliza os itens */
-  }
-
-}/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP GRANDE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-@media (min-width: 1280px) {
-  .product-card img {
-    width: 100%;
-    height: 28vh;
-    object-fit: cover;
-    border-bottom: 2px solid #fff;
-  }
-
-  .product-card .price {
-    margin: 10px 0;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #ffd700;
-  }
-
-  .sub-class1 {
-    position: relative;
-    width: 15vw; /* Define largura proporcional */
-    height: 40vh; /* Define altura proporcional */
-    overflow: hidden;
-    border-radius: 10px; /* Bordas arredondadas */
-    transition: transform 0.3s ease;
-  }
-
-  .sub-cards {
-    display: grid; /* Usa grid para criar linhas e colunas */
-    grid-template-columns: repeat(5, 1fr); /* 5 cards por linha */
-    gap: 3vh; /* Espaçamento entre os cards */
-    padding: 10vh;
-  }
-
-  .scroll-to-top {
-    position: fixed;
-    bottom: 10vh;
-    right: 5vw;
-    background-color: #341901; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    border: none;
-    padding: 1vh 1vw;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.3s ease;
-    z-index: 1000;
-  }
-
-  .sub-class {
-    margin:0vh 0vw 10vh;
-    padding: 2vh;
-    display: flex;
-    flex-wrap: wrap; /* Permite quebrar em linhas se necessário */
-    gap: 1vw; /* Espaço entre as imagens */
-    justify-content: center; /* Centraliza os itens */
-  }
 }
