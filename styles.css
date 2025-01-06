@@ -372,3 +372,84 @@ color: #000000;
          }
 
 }
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TABLET~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media (min-width:720px) and (max-width:1024px) {
+  .sub-class {
+        margin:0vh 0vw 10vh;
+        padding: 2vh;
+        display: flex;
+        flex-wrap: wrap; /* Permite quebrar em linhas se necessário */
+        gap: 1vw; /* Espaço entre as imagens */
+        justify-content: center; /* Centraliza os itens */
+        }
+  .sub-class1 {
+        position: relative;
+        width: 17vw; /* Define largura proporcional */
+        height: 18vh; /* Define altura proporcional */
+        overflow: hidden;
+        border-radius: 10px; /* Bordas arredondadas */
+        transition: transform 0.3s ease;
+        }
+  .sub-class1 .overlay .text {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        text-shadow: 10px 15px 20px #000000b3; /* Sombra para destacar o texto */
+        z-index: 2; /* Fica acima do degradê */
+        }
+
+  #vodka{
+        padding: 1vh;
+        text-align: center;
+        margin: 1vh;
+        }
+  #rum{
+        padding: 1vh;
+        text-align: center;
+        margin: 1vh;
+        }
+  #gin{
+        padding: 1vh;
+        text-align: center;
+        margin: 1vh;
+        }       
+  #tequila {
+        padding: 1px;
+        text-align: center;
+        margin: 1vh;
+        }  
+  #whisky {
+        padding: 1px;
+        text-align: center;
+        margin: 1vh;
+        } 
+        .sub-cards {
+         grid-template-columns: repeat(3, 1fr); /* 3 cards por linha */
+         gap: 1vh; /* Ajusta o espaçamento entre os cards */
+         padding: 1vh; /* Reduz o padding geral */
+       }
+     
+       .product-card img {
+         height: 15vh; /* Ajusta a altura para manter o layout compacto */
+       }
+     
+       .product-card h3 {
+         font-size: 1.5rem; /* Reduz o tamanho do título */
+       }
+     
+       .product-card .price {
+         font-size: 1.8rem; /* Reduz o tamanho do preço */
+       }
+
+       .cards {
+         padding: 1vh;
+         border-radius: 8px;
+       }
+
+}
