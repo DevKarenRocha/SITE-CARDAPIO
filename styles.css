@@ -16,7 +16,7 @@ body {
 
 .sub-class1 {
   position: relative;
-  width: 40vw; /* Define largura proporcional */
+  width: 15vw; /* Define largura proporcional */
   height: 40vh; /* Define altura proporcional */
   overflow: hidden;
   border-radius: 10px; /* Bordas arredondadas */
@@ -28,7 +28,7 @@ body {
 }
 
 .sub-class1 img {
-  width:20vh;
+  width:100%;
   height: 100%;
   object-fit: cover; /* Faz a imagem preencher o container */
   border-radius: 10px; /* Garante que a imagem siga as bordas */
@@ -105,15 +105,15 @@ hr{
 }
 
 .cards {
-  padding: 20px;
+  padding: 10vh;
   border-radius: 8px;
 }
 
 .sub-cards {
   display: grid; /* Usa grid para criar linhas e colunas */
   grid-template-columns: repeat(5, 1fr); /* 5 cards por linha */
-  gap: 20px; /* Espaçamento entre os cards */
-  padding: 20px;
+  gap: 1vh; /* Espaçamento entre os cards */
+  padding: 5vh;
 }
 
 /* Estilo do Card */
@@ -192,14 +192,14 @@ hr{
 
 .scroll-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10vh;
+  right: 5vw;
   background-color: #341901; /* Cor de fundo */
   color: white; /* Cor do texto */
   border: none;
-  padding: 10px 15px;
+  padding: 1vh 2vw;
   border-radius: 50%;
-  font-size: 24px;
+  font-size: 1.5rem;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: opacity 0.3s ease;
@@ -217,6 +217,8 @@ color: #000000;
   pointer-events: none;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TELA DE TABLET~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 @media (max-width: 768px) {
   .product-card img {
     width: 100%;
@@ -232,11 +234,36 @@ color: #000000;
     color: #ffd700;
   }
 
+  .sub-class1 {
+    position: relative;
+    width: 40vw; /* Define largura proporcional */
+    height: 40vh; /* Define altura proporcional */
+    overflow: hidden;
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: transform 0.3s ease;
+  }
+
   .sub-cards {
     display: grid; /* Usa grid para criar linhas e colunas */
     grid-template-columns: repeat(3, 1fr); /* 5 cards por linha */
     gap: 20px; /* Espaçamento entre os cards */
     padding: 20px;
+  }
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 10vh;
+    right: 8vw;
+    background-color: #341901; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none;
+    padding: 5vh 10vw;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+    z-index: 1000;
   }
 
   .sub-class {
@@ -248,4 +275,121 @@ color: #000000;
     justify-content: center; /* Centraliza os itens */
   }
 
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP PEQUENO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media (max-width: 1024px) {
+  .product-card img {
+    width: 100%;
+    height: 28vh;
+    object-fit: cover;
+    border-bottom: 2px solid #fff;
+  }
+
+  .product-card .price {
+    margin: 10px 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffd700;
+  }
+
+  .sub-class1 {
+    position: relative;
+    width: 15vw; /* Define largura proporcional */
+    height: 40vh; /* Define altura proporcional */
+    overflow: hidden;
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: transform 0.3s ease;
+  }
+
+  .sub-cards {
+    display: grid; /* Usa grid para criar linhas e colunas */
+    grid-template-columns: repeat(5, 1fr); /* 5 cards por linha */
+    gap: 1VW; /* Espaçamento entre os cards */
+    padding: 20px;
+  }
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 10vh;
+    right: 5vw;
+    background-color: #341901; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none;
+    padding: 2vh 2vw;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+  }
+
+  .sub-class {
+    margin:0vh 0vw 10vh;
+    padding: 2vh;
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar em linhas se necessário */
+    gap: 1vw; /* Espaço entre as imagens */
+    justify-content: center; /* Centraliza os itens */
+  }
+
+}/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESKTOP GRANDE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media (min-width: 1280px) {
+  .product-card img {
+    width: 100%;
+    height: 28vh;
+    object-fit: cover;
+    border-bottom: 2px solid #fff;
+  }
+
+  .product-card .price {
+    margin: 10px 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffd700;
+  }
+
+  .sub-class1 {
+    position: relative;
+    width: 15vw; /* Define largura proporcional */
+    height: 40vh; /* Define altura proporcional */
+    overflow: hidden;
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: transform 0.3s ease;
+  }
+
+  .sub-cards {
+    display: grid; /* Usa grid para criar linhas e colunas */
+    grid-template-columns: repeat(5, 1fr); /* 5 cards por linha */
+    gap: 3vh; /* Espaçamento entre os cards */
+    padding: 10vh;
+  }
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 10vh;
+    right: 5vw;
+    background-color: #341901; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none;
+    padding: 1vh 1vw;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+  }
+
+  .sub-class {
+    margin:0vh 0vw 10vh;
+    padding: 2vh;
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar em linhas se necessário */
+    gap: 1vw; /* Espaço entre as imagens */
+    justify-content: center; /* Centraliza os itens */
+  }
 }
